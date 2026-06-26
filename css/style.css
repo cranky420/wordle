@@ -1,0 +1,42 @@
+body{
+    background:#121213;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+#board{
+
+    width:350px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,60px);
+
+    gap:8px;
+
+}
+
+.tile{
+
+    width:60px;
+
+    height:60px;
+
+    border:2px solid #3a3a3c;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    text-transform:uppercase;
+
+}
