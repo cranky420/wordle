@@ -1,19 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordle Clone</title>
 
-    <link rel="stylesheet" href="style.css">
+    <title>Word Quest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<h1>Wordle Clone</h1>
+    <!-- Header -->
 
-<div id="board"></div>
+    <header>
 
-<script src="script.js"></script>
+        <div class="logo">
+            🟩 WordQuest
+        </div>
+
+        <div class="header-right">
+
+            <span>Daily Challenge</span>
+
+        </div>
+
+    </header>
+
+    <!-- Main -->
+
+    <main>
+
+        <!-- Left Panel -->
+
+        <aside class="sidebar">
+
+            <div class="card">
+
+                <h2>👋 Welcome to WordQuest</h2>
+
+                <p>
+                    Guess today's hidden 5-letter word.
+                </p>
+
+                <ul>
+
+                    <li>🟩 Green = Correct letter & position</li>
+
+                    <li>🟨 Yellow = Correct letter, wrong position</li>
+
+                    <li>⬜ Gray = Letter not in the word</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card stats">
+
+                <h3>📊 Statistics</h3>
+
+                <p>Visitors Today</p>
+
+                <h1 id="visitorCount">0</h1>
+
+                <hr>
+
+                <p>Top Winners</p>
+
+                <ol id="leaderboard">
+
+                    <li>Coming Soon</li>
+
+                </ol>
+
+            </div>
+
+        </aside>
+
+        <!-- Game -->
+
+        <section class="game-area">
+
+            <h1>
+
+                Can you solve today's <span>WordQuest?</span>
+
+            </h1>
+
+            <p>
+
+                Guess the hidden 5-letter word in six attempts.
+
+            </p>
+
+            <div id="board"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        Made with ❤️ by BRSD
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
